@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def catbind(a, b):
     """
     Concatenates two pandas categoricals.
@@ -25,7 +26,7 @@ def catbind(a, b):
     [character, hits, your, eyeballs, but, integer, where it, counts]
     Categories (8, object): [but, character, counts,
     eyeballs, hits, integer, where it, your]
-    """    
+    """
     concatenated = pd.concat([pd.Series(a.astype("str")),
-                   pd.Series(b.astype("str"))])
+                              pd.Series(b.astype("str"))])
     return pd.Categorical(concatenated)

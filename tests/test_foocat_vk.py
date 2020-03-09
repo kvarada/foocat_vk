@@ -1,6 +1,7 @@
 from foocat_vk import foocat_vk
 import pandas as pd
 
+
 def test_catbind():
     a = pd.Categorical(["character", "hits", "your", "eyeballs"])
     b = pd.Categorical(["but", "integer", "where it", "counts"])
